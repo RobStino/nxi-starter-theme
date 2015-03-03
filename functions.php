@@ -51,8 +51,8 @@ function nxi_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'nxi' ),
-		'top-bar-menu' => __( 'Top Bar Menu', 'nxi' ),
-		'top-bar-social-menu' => __( 'Top Bar Social Menu', 'nxi' ),
+		'top-bar-menu-left' => __( 'Top Bar Menu Left', 'nxi' ),
+		'top-bar-menu-right' => __( 'Top Bar Menu Right', 'nxi' ),
 	) );
 
 	/*

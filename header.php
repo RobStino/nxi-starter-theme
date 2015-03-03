@@ -22,14 +22,18 @@
 		<header id="masthead" class="site-header" role="banner">
 			<nav class="top-bar">
 				<div class="container">
-					<div class="top-bar-links">
-						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+					<div class="top-bar-menu-left">
+						<?php wp_nav_menu( array( 'theme_location' => 'top-bar-menu-left' ) ); ?>
 					</div>
-					<div class="top-bar-social">
-						<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+					<div class="top-bar-menu-right">
+						<?php wp_nav_menu( array( 'theme_location' => 'top-bar-menu-right' ) ); ?>
 					</div>
 				</div>
 			</nav>
+			<section class="hero">
+				<div class="container">
+				</div>
+			</section>
 			<nav class="navbar navbar-default" role="navigation" id="navbar"><!-- Navbar -->
 				<a href="<?php get_template_directory_uri() ?>" class="navbar-brand-icon-container">
 				</a>
@@ -42,6 +46,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
+						<a class="navbar-brand" href="#">Brand</a>
 					</div>
 
 						<?php
