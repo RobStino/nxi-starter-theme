@@ -74,6 +74,23 @@
   z-index: 100;
 }
 
+/* line 1, ../sass/_footers.scss */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0px;
+}
+/* line 5, ../sass/_footers.scss */
+.site-footer a {
+  color: #fff;
+}
+
+/* line 9, ../sass/_footers.scss */
+.site-info {
+  padding: 20px 0px;
+  text-align: center;
+}
+
 /* line 1, ../sass/_main.scss */
 .site-content {
   margin-top: 66px;

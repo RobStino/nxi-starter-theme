@@ -95,6 +95,42 @@ function nxi_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer Area 1', 'nxi' ),
+		'id'            => 'footer-area-1',
+		'description'   => __( 'Widgets in this area will be shown in the first column of the Footer and on all posts and pages.', 'nxi' ),
+		'before_widget' => '<aside id="footer-area-1" class="footer-area-1 widget-area" role="complementary">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="footer-widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer Area 2', 'nxi' ),
+		'id'            => 'footer-area-2',
+		'description'   => __( 'Widgets in this area will be shown in the second column of the Footer and on all posts and pages.', 'nxi' ),
+		'before_widget' => '<aside id="footer-area-2" class="footer-area-2 widget-area" role="complementary">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="footer-widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer Area 3', 'nxi' ),
+		'id'            => 'footer-area-3',
+		'description'   => __( 'Widgets in this area will be shown in the third column of the Footer and on all posts and pages.', 'nxi' ),
+		'before_widget' => '<aside id="footer-area-3" class="footer-area-3 widget-area" role="complementary">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="footer-widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer Area 4', 'nxi' ),
+		'id'            => 'footer-area-4',
+		'description'   => __( 'Widgets in this area will be shown in the fourth column of the Footer and on all posts and pages.', 'nxi' ),
+		'before_widget' => '<aside id="footer-area-4" class="footer-area-4 widget-area" role="complementary">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="footer-widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'nxi_widgets_init' );
 
