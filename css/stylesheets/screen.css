@@ -71,6 +71,7 @@
 .navbar-fixed {
   top: 0px;
   position: fixed;
+  z-index: 100;
 }
 
 /* line 1, ../sass/_main.scss */
