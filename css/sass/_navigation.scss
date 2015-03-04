@@ -45,9 +45,13 @@
 .navbar {
   position: absolute;
   width: 100%;
+  z-index: 100;
 }
 .navbar-fixed {
   top: 0px;
   position: fixed;
-  z-index: 100;
+}
+.site-logo-link {
+  padding-top: 15px;
+  margin-right: 20px;
 }

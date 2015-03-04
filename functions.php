@@ -76,6 +76,19 @@ function nxi_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	// Create a custom image size for Site Logo.
+	add_image_size( 'nxi-logo',120 );
+
+	// Add Support for Jetpack Site Logo
+	$args = array(
+	    'header-text' => array(
+	        'site-title',
+	        'site-description',
+	    ),
+	    'size' => 'nxi-logo',
+	);
+	add_theme_support( 'site-logo', $args );
 }
 endif; // nxi_setup
 add_action( 'after_setup_theme', 'nxi_setup' );
@@ -189,4 +202,5 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 add_filter( 'show_admin_bar', '__return_false' );
+
 

@@ -65,18 +65,24 @@
 .navbar {
   position: absolute;
   width: 100%;
+  z-index: 100;
 }
 
-/* line 49, ../sass/_navigation.scss */
+/* line 50, ../sass/_navigation.scss */
 .navbar-fixed {
   top: 0px;
   position: fixed;
-  z-index: 100;
+}
+
+/* line 54, ../sass/_navigation.scss */
+.site-logo-link {
+  padding-top: 15px;
+  margin-right: 20px;
 }
 
 /* line 1, ../sass/_footers.scss */
 .site-footer {
-  background-color: #333;
+  background-color: #222;
   color: #fff;
   padding: 30px 0px;
 }

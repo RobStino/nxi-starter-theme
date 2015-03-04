@@ -41,8 +41,6 @@
 			<?php endif; ?>
 
 			<nav class="navbar navbar-default" role="navigation" id="navbar"><!-- Navbar -->
-				<a href="<?php get_template_directory_uri() ?>" class="navbar-brand-icon-container">
-				</a>
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
@@ -52,7 +50,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Brand</a>
+						<?php if ( function_exists( 'jetpack_the_site_logo' ) ) jetpack_the_site_logo(); ?>
 					</div>
 
 						<?php
