@@ -89,6 +89,16 @@ function nxi_setup() {
 	    'size' => 'nxi-logo',
 	);
 	add_theme_support( 'site-logo', $args );
+
+	// Jetpack Featured Content
+	 add_theme_support( 'featured-content', array(
+	    'filter'     => 'nxi_get_featured_posts',
+	    'max_posts'  => 4,
+	) );
+
+	function nxi_get_featured_posts() {
+	    return apply_filters( 'nxi_get_featured_posts', array() );
+	}
 }
 endif; // nxi_setup
 add_action( 'after_setup_theme', 'nxi_setup' );
@@ -202,5 +212,4 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 add_filter( 'show_admin_bar', '__return_false' );
-
 

@@ -82,16 +82,17 @@
 
 /* line 1, ../sass/_footers.scss */
 .site-footer {
+  display: block !important;
   background-color: #222;
   color: #fff;
   padding: 30px 0px;
 }
-/* line 5, ../sass/_footers.scss */
+/* line 6, ../sass/_footers.scss */
 .site-footer a {
   color: #fff;
 }
 
-/* line 9, ../sass/_footers.scss */
+/* line 10, ../sass/_footers.scss */
 .site-info {
   padding: 20px 0px;
   text-align: center;
