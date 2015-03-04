@@ -19,7 +19,7 @@
 
 <body <?php body_class(); ?>>
 	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header" role="banner">			
 			<nav class="top-bar">
 				<div class="container">
 					<div class="top-bar-menu-left">
@@ -30,10 +30,16 @@
 					</div>
 				</div>
 			</nav>
+
+			<?php if ( is_front_page() ) : ?>
+
 			<section class="hero">
 				<div class="container">
 				</div>
 			</section>
+
+			<?php endif; ?>
+
 			<nav class="navbar navbar-default" role="navigation" id="navbar"><!-- Navbar -->
 				<a href="<?php get_template_directory_uri() ?>" class="navbar-brand-icon-container">
 				</a>
