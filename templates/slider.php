@@ -17,29 +17,27 @@ if ( empty( $slider ) )
 			$thumb_id = get_post_thumbnail_id();
 			$thumb_url = wp_get_attachment_thumb_url( $thumb_id );
 		?>
-		<li data-thumb="<?php echo $thumb_url ?>" class="full-width-slider">
+		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), large ); ?>
+		<li data-thumb="<?php echo $thumb_url ?>" class="slide" style="background-image: url('<?php echo $image[0]; ?>'); background-size: cover; background-position: center center;">
 
-		<?php if ( has_post_thumbnail() ) : ?> 
+	
+			<div class="bg-overlay-darken">
+				<header class="entry-header">
 
-			<?php the_post_thumbnail('large', array( 'class'	=> "img-responsive, blog-thumbnail")); ?> 
+					<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
-		<?php endif ; ?>
+					<?php if ( 'post' == get_post_type() ) : ?>
 
-		<header class="entry-header">
+					<div class="entry-meta">
 
-			<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+						<?php nxi_posted_on(); ?>
 
-			<?php if ( 'post' == get_post_type() ) : ?>
+					</div><!-- .entry-meta -->
 
-			<div class="entry-meta">
+					<?php endif; ?>
 
-				<?php nxi_posted_on(); ?>
-
-			</div><!-- .entry-meta -->
-
-			<?php endif; ?>
-
-		</header><!-- .entry-header -->
+				</header><!-- .entry-header -->
+			</div>
 		</li>
 
 		<?php endforeach; ?>

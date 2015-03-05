@@ -1,6 +1,47 @@
 .full-width-slider {
-	height: 600px;
+	color: #fff;
+	.slide .entry-header {
+		padding: 120px 0px;
+		text-align: center;
+	}
+	a {
+		color: #fff;
+	}
+	.flexslider {
+		margin-bottom: 0px;
+	}
+
 }
 .flexslider {
 	border: none;
+}
+.flex-direction-nav a {
+	color: RGBA( 244,244,244,0);
+	text-shadow: none;
+}
+.flex-direction-nav a.flex-prev:before, 
+.flex-direction-nav a.flex-next:before { 
+	content: "";
+	display: inline-block;
+	position: absolute;
+	background: none;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	width: 20px;
+	height: 20px;
+	text-shadow: none;
+}
+.flex-control-nav {
+	position: absolute;	
+	bottom: 20px;
+	z-index: 100;
+	li a {
+		background-color: transparent !important;
+		border: 1px solid #fff;
+		box-shadow: none;
+	}
+	li .flex-active {
+		background-color: #fff !important;
+		box-shadow: none;
+	}
 }

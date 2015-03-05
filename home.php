@@ -9,7 +9,7 @@ get_header(); ?>
 
 <?php /* Featured Posts Section 1  - Content Blocks */ ?>
 <section>
-	<div class="container-fluid">
+	<div class="container-fluid content-area">
 		<div class="row">
 			<?php
 			// Get our Featured Content posts
@@ -32,17 +32,15 @@ get_header(); ?>
 
 <?php /* Featured Posts Slider */ ?>
 <section>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-12">
-				<?php get_template_part( 'templates/slider' ); ?>
-			</div>
+	<div class="container-fluid content-area">
+		<div class="row full-width-slider">
+			<?php get_template_part( 'templates/slider' ); ?>
 		</div>
 	</div>
 </section>
 
 <section>
-	<div class="container">
+	<div class="container content-area">
 		<div class="row">
 			<div id="primary" class="content-area col-sm-12">
 				<main id="main" class="site-main" role="main">
