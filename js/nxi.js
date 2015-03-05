@@ -13,3 +13,12 @@ $window.scroll(function() {
           nav.removeClass('navbar-fixed');
     }
 });
+
+
+// Flexslider
+$(window).load(function() {
+    $('.flexslider').flexslider({
+		animation: "slide",
+	    controlNav: "thumbnails"
+    });
+ });
